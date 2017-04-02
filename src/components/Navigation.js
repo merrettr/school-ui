@@ -142,25 +142,33 @@ class Navigation extends Component {
       </LinkContainer>
 
       <LinkContainer
-        name="Admin"
-        icon="fa-lock"
-        defaultOpen={startsWith(pathname, '/admin')}
+        name="Editor"
+        icon="fa-pencil"
+        defaultOpen={startsWith(pathname, '/editor')}
         visible={find(roles, r => r.description === 'editor')}
       >
         <Link
           name="Categories"
           icon="fa-tasks"
-          onClick={() => this.onLinkClick('/admin/behaviour-categories')}
-          isActive={startsWith(pathname, '/admin/behaviour-categories')}
+          onClick={() => this.onLinkClick('/editor/behaviour-categories')}
+          isActive={startsWith(pathname, '/editor/behaviour-categories')}
           nestLevel={1}
         />
         <Link
           name="Behaviour"
           icon="fa-tasks"
-          onClick={() => this.onLinkClick('/admin/behaviour')}
-          isActive={pathname === '/admin/behaviour'}
+          onClick={() => this.onLinkClick('/editor/behaviour')}
+          isActive={pathname === '/editor/behaviour'}
           nestLevel={1}
         />
+      </LinkContainer>
+
+      <LinkContainer
+        name="Admin"
+        icon="fa-lock"
+        defaultOpen={startsWith(pathname, '/admin')}
+        visible={find(roles, r => r.description === 'admin')}
+      >
         <Link
           name="Students"
           icon="fa-user-o"
