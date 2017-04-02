@@ -32,12 +32,12 @@ export default (
       <Route path="/student/:studentId/category/:categoryId/behaviour/:behaviourId/observation" component={ObservationPage} />
       <Route path="/reports/stats" component={StatsPage} />
       <Route path="/reports/stats/:type" component={ReportPage} />
-      <Route path="/admin/behaviour-categories" component={AdminBehaviourCategoryPage} />
-      <Route path="/admin/behaviour-categories/create" component={AdminCreateBehaviourCategoryPage} />
-      <Route path="/admin/behaviour-categories/:id" component={AdminUpdateBehaviourCategoryPage} />
-      <Route path="/admin/behaviour" component={AdminBehaviourPage} />
-      <Route path="/admin/behaviour/create" component={AdminCreateBehaviourPage} />
-      <Route path="/admin/behaviour/:id" component={AdminUpdateBehaviourPage} />
+      <Route path="/editor/behaviour-categories" component={AdminBehaviourCategoryPage} />
+      <Route path="/editor/behaviour-categories/create" component={AdminCreateBehaviourCategoryPage} />
+      <Route path="/editor/behaviour-categories/:id" component={AdminUpdateBehaviourCategoryPage} />
+      <Route path="/editor/behaviour" component={AdminBehaviourPage} />
+      <Route path="/editor/behaviour/create" component={AdminCreateBehaviourPage} />
+      <Route path="/editor/behaviour/:id" component={AdminUpdateBehaviourPage} />
       <Route path="/admin/students" component={AdminStudentPage} />
       <Route path="/admin/users" component={AdminUserPage} />
     </Route>

@@ -38,7 +38,7 @@ class AdminBehaviourCategoryPage extends Component {
         firstItem={
           <ListItem
             key="0"
-            onClick={() => onNavigate('/admin/behaviour-categories/create')}
+            onClick={() => onNavigate('/editor/behaviour-categories/create')}
             style={{
               backgroundColor: '#337ab7',
               borderColor: '#2e6da4',
@@ -51,7 +51,7 @@ class AdminBehaviourCategoryPage extends Component {
         onRender={({ id, description }) =>
           <ListItem
             key={id}
-            onClick={() => onNavigate(`/admin/behaviour-categories/${id}`)}
+            onClick={() => onNavigate(`/editor/behaviour-categories/${id}`)}
           >
             {description}
           </ListItem>}
@@ -65,7 +65,7 @@ class AdminBehaviourCategoryPage extends Component {
         onRender={({ id, description }) =>
           <ListItem
             key={id}
-            onClick={() => onNavigate(`/admin/behaviour-categories/${id}`)}
+            onClick={() => onNavigate(`/editor/behaviour-categories/${id}`)}
           >
             {description}
           </ListItem>}

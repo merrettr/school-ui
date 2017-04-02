@@ -20,7 +20,7 @@ class AdminUpdateBehaviourCategoryPage extends Component {
     const { onNavigate, isSuccess } = this.props;
     
     if (!isSuccess && next.isSuccess) {
-      onNavigate('/admin/behaviour-categories');
+      onNavigate('/editor/behaviour-categories');
     }
   }
 

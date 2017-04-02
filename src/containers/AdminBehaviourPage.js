@@ -38,7 +38,7 @@ class AdminBehaviourPage extends Component {
         firstItem={
           <ListItem
             key="0"
-            onClick={() => onNavigate('/admin/behaviour/create')}
+            onClick={() => onNavigate('/editor/behaviour/create')}
             style={{
               backgroundColor: '#337ab7',
               borderColor: '#2e6da4',
@@ -51,7 +51,7 @@ class AdminBehaviourPage extends Component {
         onRender={({ id, description }) =>
           <ListItem
             key={id}
-            onClick={() => onNavigate(`/admin/behaviour/${id}`)}
+            onClick={() => onNavigate(`/editor/behaviour/${id}`)}
           >
             {description}
           </ListItem>}
@@ -65,7 +65,7 @@ class AdminBehaviourPage extends Component {
         onRender={({ id, description }) =>
           <ListItem
             key={id}
-            onClick={() => onNavigate(`/admin/behaviour/${id}`)}
+            onClick={() => onNavigate(`/editor/behaviour/${id}`)}
           >
             {description}
           </ListItem>}
